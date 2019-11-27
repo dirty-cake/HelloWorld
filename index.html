@@ -13,10 +13,13 @@
   
 
   <div id="app">
-    <span @mouseover="changeText">Text</span>
+    <input type="text" v-on:input="increment ($event.target.value)">
+    <p>{{ value }}</p>
+    <p>{{ doubleValue }}</p>
+    <!-- <span @mouseover="changeText">Text</span>
     <p>{{ title }}</p>
     <p v-bind:class="styleCSS"> Colour: {{ styleCSS }}</p>
-    <input type="text" v-on:input="styleCSS = $event.target.value">
+    <input type="text" v-on:input="styleCSS = $event.target.value"> -->
   </div>
 
   <script src="js/main.js"></script>
