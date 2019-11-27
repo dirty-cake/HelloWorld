@@ -15,7 +15,7 @@
   <div id="app">
     <button v-on:click="show = !show">Show/Hide</button>
     <p v-if="show" >Text which can become invisible</p>
-    <p v-else="show" >Text 2</p>
+    <p v-else>{{ message | lowercase | capatilize }}</p>
 
     <ul>
       <li v-for="(car, i) in cars">{{ i+1 }} - {{ car.model }}, speed: {{ car.speed }}</li>
