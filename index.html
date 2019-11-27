@@ -13,9 +13,19 @@
   
 
   <div id="app">
-    <input type="text" v-on:input="increment ($event.target.value)">
+    <button v-on:click="show = !show">Show/Hide</button>
+    <p v-if="show" >Text which can become invisible</p>
+    <p v-else="show" >Text 2</p>
+
+    <ul>
+      <li>{{ cars[2].model }}</li>
+    </ul>
+              <!-- 3 lesson -->
+    <!-- <input type="text" v-on:input="increment ($event.target.value)">
     <p>{{ value }}</p>
-    <p>{{ doubleValue }}</p>
+    <p>{{ doubleValue }}</p> -->
+
+         <!-- 1-2 lessons -->
     <!-- <span @mouseover="changeText">Text</span>
     <p>{{ title }}</p>
     <p v-bind:class="styleCSS"> Colour: {{ styleCSS }}</p>
