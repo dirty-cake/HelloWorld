@@ -18,7 +18,7 @@
     <p v-else="show" >Text 2</p>
 
     <ul>
-      <li>{{ cars[2].model }}</li>
+      <li v-for="(car, i) in cars">{{ i+1 }} - {{ car.model }}, speed: {{ car.speed }}</li>
     </ul>
               <!-- 3 lesson -->
     <!-- <input type="text" v-on:input="increment ($event.target.value)">
