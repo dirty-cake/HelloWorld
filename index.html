@@ -14,6 +14,8 @@
   <div id="app">
     <span @mouseover="changeText">Text</span>
     <p>{{ title }}</p>
+    <p>Colour: {{ styleCSS }}</p>
+    <input type="text" v-on:input="styleCSS = $event.target.value">
   </div>
 
   <script src="js/main.js"></script>
