@@ -12,14 +12,17 @@
   <script src="https://unpkg.com/vue"></script>
   
 
-  <div id="app">
-    <button v-on:click="show = !show">Show/Hide</button>
+  <div id="app"> 
+    <app-car></app-car>
+
+    <!-- 4-5 lessons -->
+    <!-- <button v-on:click="show = !show">Show/Hide</button>
     <p v-if="show" >Text which can become invisible</p>
     <p v-else>{{ message | lowercase | capatilize }}</p>
 
     <ul>
       <li v-for="(car, i) in cars">{{ i+1 }} - {{ car.model }}, speed: {{ car.speed }}</li>
-    </ul>
+    </ul> -->
               <!-- 3 lesson -->
     <!-- <input type="text" v-on:input="increment ($event.target.value)">
     <p>{{ value }}</p>
