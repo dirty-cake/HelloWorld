@@ -16,9 +16,29 @@ Vue.component ('app-car', {
 });
 new Vue ({
     el: "#app",
-    data: {
-        
+    components: {
+        'app-car': {
+            data: function () {
+                return {
+                    cars: [
+                        {model: "BMW"},
+                        {model: "Volvo"},
+                        {model: "Mercedes-Benz"},
+                        {model: "Ford"},
+                        {model: "Audi"},
+                        {model: "Siat"},
+                        {model: "Fiat"}
+                    ]
+                }
+            },
+            template: '<di><div class="car" v-for="car in cars"><p>{{ car.model }}</p></div></div>'
+        }
     }
+}); 
+
+new Vue ({
+    el: "#app2"
+    
 }); 
 // 5 lesson
 // Vue.filter ('capatilize', function (value){
